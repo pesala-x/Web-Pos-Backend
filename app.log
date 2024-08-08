@@ -1,0 +1,412 @@
+11:05:15:802 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:05:15:809 [RMI TCP Connection(2)-127.0.0.1] ERROR o.e.w.controller.Customer - Connection failed
+javax.naming.NameNotFoundException: Name [pos] is not bound in this Context. Unable to find [pos].
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:520)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:148)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:530)
+	at org.apache.naming.NamingContext.lookup(NamingContext.java:155)
+	at org.apache.naming.SelectorContext.lookup(SelectorContext.java:144)
+	at java.naming/javax.naming.InitialContext.lookup(InitialContext.java:409)
+	at org.example.webposbackend.controller.Customer.init(Customer.java:34)
+	at jakarta.servlet.GenericServlet.init(GenericServlet.java:143)
+	at jakarta.servlet.http.HttpServlet.init(HttpServlet.java:121)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:837)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:794)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:698)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4172)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4458)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:654)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1796)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:422)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:376)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:264)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management/com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1412)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+11:12:30:182 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:12:30:648 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:12:58:391 [http-nio-8080-exec-8] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:12:58:521 [http-nio-8080-exec-8] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:14:42:559 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:14:42:628 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:17:01:085 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:17:01:540 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:17:48:104 [http-nio-8080-exec-8] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:17:48:238 [http-nio-8080-exec-8] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:18:20:824 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:18:20:899 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:28:28:369 [http-nio-8080-exec-4] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:28:28:402 [http-nio-8080-exec-4] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:29:57:530 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:29:57:950 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:30:21:436 [http-nio-8080-exec-8] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:30:21:489 [http-nio-8080-exec-8] ERROR o.e.w.controller.Customer - Connection failed
+11:41:55:212 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:41:55:589 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:42:13:880 [http-nio-8080-exec-6] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:42:13:948 [http-nio-8080-exec-6] ERROR o.e.w.controller.Customer - Connection failed
+java.sql.SQLException: Duplicate entry 'C001' for key 'customer.PRIMARY'
+	at org.example.webposbackend.dao.CustomerDAOImpl.saveCustomer(CustomerDAOImpl.java:29)
+	at org.example.webposbackend.bo.CustomerBOIMPL.saveCustomer(CustomerBOIMPL.java:12)
+	at org.example.webposbackend.controller.Customer.doPost(Customer.java:79)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.CORSFilter.doFilter(CORSFilter.java:23)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+11:49:15:243 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:49:15:641 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:49:36:092 [http-nio-8080-exec-7] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:49:36:136 [http-nio-8080-exec-7] ERROR o.e.w.controller.Customer - Connection failed
+java.sql.SQLException: Duplicate entry 'C001' for key 'customer.PRIMARY'
+	at org.example.webposbackend.dao.CustomerDAOImpl.saveCustomer(CustomerDAOImpl.java:29)
+	at org.example.webposbackend.bo.CustomerBOIMPL.saveCustomer(CustomerBOIMPL.java:12)
+	at org.example.webposbackend.controller.Customer.doPost(Customer.java:80)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.CORSFilter.doFilter(CORSFilter.java:23)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+13:03:36:925 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+13:03:37:339 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+13:05:11:688 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:05:11:737 [http-nio-8080-exec-9] ERROR o.e.w.controller.Customer - Connection failed
+13:05:57:695 [http-nio-8080-exec-4] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:05:57:699 [http-nio-8080-exec-4] ERROR o.e.w.controller.Customer - Connection failed
+13:07:43:309 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+13:07:43:771 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+13:08:08:871 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:08:09:014 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Customer saved successfully
+13:12:31:634 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+13:12:32:071 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+13:17:40:968 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:17:40:984 [http-nio-8080-exec-1] ERROR o.e.w.controller.Customer - Connection failed
+13:23:43:255 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+13:23:43:707 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+13:23:56:566 [http-nio-8080-exec-3] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:23:56:686 [http-nio-8080-exec-3] INFO  o.e.w.controller.Customer - Customer saved successfully
+13:24:13:369 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:24:13:426 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Customer saved successfully
+13:24:43:364 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+13:24:43:804 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+13:24:59:057 [http-nio-8080-exec-3] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:24:59:181 [http-nio-8080-exec-3] INFO  o.e.w.controller.Customer - Customer saved successfully
+13:26:05:062 [http-nio-8080-exec-6] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:26:05:167 [http-nio-8080-exec-6] INFO  o.e.w.controller.Customer - Customer saved successfully
+13:35:55:298 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+13:35:55:983 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+13:36:07:992 [http-nio-8080-exec-6] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:36:08:138 [http-nio-8080-exec-6] INFO  o.e.w.controller.Customer - Customer saved successfully
+13:44:52:834 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+13:44:53:319 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+13:45:08:879 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+13:45:09:077 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Customer saved successfully
+20:12:06:285 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:12:06:768 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:27:19:330 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:27:19:754 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:33:45:326 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:33:45:762 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:36:38:222 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:36:38:659 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:37:51:521 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+20:37:51:569 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Customer saved successfully
+20:49:26:881 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:49:27:363 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:51:43:664 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+20:51:44:143 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+20:53:31:246 [http-nio-8080-exec-7] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+20:53:31:400 [http-nio-8080-exec-7] INFO  o.e.w.controller.Customer - Customer saved successfully
+21:12:16:561 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:12:16:980 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:25:51:550 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:25:52:033 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:28:22:727 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:28:23:136 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:28:38:998 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+21:28:39:122 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Customer saved successfully
+21:43:32:059 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:43:32:511 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:46:17:586 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+21:46:17:794 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Customer saved successfully
+21:55:34:413 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+21:55:34:881 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+21:56:00:739 [http-nio-8080-exec-10] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+21:56:00:896 [http-nio-8080-exec-10] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:08:55:445 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+11:08:56:017 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+11:08:56:019 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:08:56:036 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:09:38:903 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+11:09:39:001 [http-nio-8080-exec-2] INFO  o.e.w.controller.Customer - Customer saved successfully
+11:10:25:614 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+11:10:25:712 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+11:38:52:973 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+11:38:53:482 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+11:38:53:484 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:38:53:498 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:44:29:388 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+11:44:29:825 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+11:44:29:828 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:44:29:847 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:44:58:570 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+11:44:58:722 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+11:45:18:304 [http-nio-8080-exec-2] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+11:45:18:416 [http-nio-8080-exec-2] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+11:45:47:591 [http-nio-8080-exec-7] ERROR o.e.webposbackend.controller.Item - Update failed
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated incorrect DOUBLE value: '4130eb3e-3d8f-48ce-9911-7b82739f2c76'
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.example.webposbackend.dao.ItemDAOImpl.updateItem(ItemDAOImpl.java:41)
+	at org.example.webposbackend.bo.ItemBOIMPL.updateItem(ItemBOIMPL.java:20)
+	at org.example.webposbackend.controller.Item.doPut(Item.java:102)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.CORSFilter.doFilter(CORSFilter.java:23)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+11:46:05:602 [http-nio-8080-exec-5] ERROR o.e.webposbackend.controller.Item - Update failed
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated incorrect DOUBLE value: '4130eb3e-3d8f-48ce-9911-7b82739f2c76'
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.example.webposbackend.dao.ItemDAOImpl.updateItem(ItemDAOImpl.java:41)
+	at org.example.webposbackend.bo.ItemBOIMPL.updateItem(ItemBOIMPL.java:20)
+	at org.example.webposbackend.controller.Item.doPut(Item.java:102)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.CORSFilter.doFilter(CORSFilter.java:23)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+11:46:58:569 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+11:46:58:646 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+11:47:53:117 [http-nio-8080-exec-8] ERROR o.e.webposbackend.controller.Item - Update failed
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Truncated incorrect DOUBLE value: '12ab4c6b-147f-4ece-9082-7898418db47f'
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.apache.tomcat.dbcp.dbcp2.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:137)
+	at org.example.webposbackend.dao.ItemDAOImpl.updateItem(ItemDAOImpl.java:41)
+	at org.example.webposbackend.bo.ItemBOIMPL.updateItem(ItemBOIMPL.java:20)
+	at org.example.webposbackend.controller.Item.doPut(Item.java:102)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.CORSFilter.doFilter(CORSFilter.java:23)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.example.webposbackend.filter.Security.doFilter(Security.java:17)
+	at jakarta.servlet.http.HttpFilter.doFilter(HttpFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+11:53:55:885 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+11:53:56:359 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+11:53:56:362 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+11:53:56:383 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+11:54:28:151 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+11:54:28:308 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Item saved successfully

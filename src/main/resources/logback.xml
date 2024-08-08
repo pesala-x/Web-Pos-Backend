@@ -1,0 +1,22 @@
+<configuration>
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss:SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="File" class="ch.qos.logback.core.FileAppender">
+<!--<file>C:\Users\chamu\Documents\Web-Pos-Backend\app.log</file>-->
+<!--C:\Users\User\Downloads\projects\Web-Pos-Backend-master\Web-Pos-Backend-master\src\main\resources\logback-->
+        <file>C:\Users\User\Downloads\projects\Web-Pos-Backend-master\Web-Pos-Backend-master\src\main\resources\logback/app.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss:SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="File"/>
+    </root>
+</configuration>
