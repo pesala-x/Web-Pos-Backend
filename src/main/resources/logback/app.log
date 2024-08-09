@@ -1517,3 +1517,7 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'pos'
 23:17:46:774 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Item saved successfully
 12:39:49:809 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Invoke idGenerate()
 12:39:49:824 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Customer saved successfully
+17:15:38:992 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+17:15:39:562 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+17:15:39:567 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+17:15:39:582 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
