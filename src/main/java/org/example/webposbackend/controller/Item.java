@@ -7,11 +7,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.example.webposbackend.bo.CustomerBOIMPL;
 import org.example.webposbackend.bo.ItemBOIMPL;
-import org.example.webposbackend.dao.CustomerDAOImpl;
-import org.example.webposbackend.dao.ItemDAOImpl;
-import org.example.webposbackend.dto.CustomerDTO;
+import org.example.webposbackend.dao.ItemDAOIMPL;
 import org.example.webposbackend.dto.ItemDTO;
 import org.example.webposbackend.util.Util;
 import org.slf4j.Logger;
@@ -73,7 +70,7 @@ public class Item extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try (PrintWriter writer = resp.getWriter()) {
             Jsonb jsonb = JsonbBuilder.create();
-            var itemDAOImpl = new ItemDAOImpl();
+            var itemDAOImpl = new ItemDAOIMPL();
             List<ItemDTO> items = itemDAOImpl.getAllItems(connection); // Add this method to retrieve all customers
             String json = jsonb.toJson(items);
             writer.write(json);

@@ -1497,3 +1497,23 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'pos'
 20:28:42:978 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
 20:29:31:358 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Invoke idGenerate()
 20:29:31:372 [http-nio-8080-exec-9] INFO  o.e.w.controller.Customer - Customer saved successfully
+23:05:35:376 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+23:05:35:962 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+23:05:35:964 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+23:05:35:992 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+23:06:54:404 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Init method invoked
+23:06:54:900 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.webposbackend.controller.Item - Connection initialized
+23:06:54:903 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Init method invoked
+23:06:54:940 [RMI TCP Connection(2)-127.0.0.1] INFO  o.e.w.controller.Customer - Connection initialized
+23:08:16:421 [http-nio-8080-exec-8] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+23:08:16:472 [http-nio-8080-exec-8] INFO  o.e.w.controller.Customer - Customer saved successfully
+23:09:14:354 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+23:09:14:366 [http-nio-8080-exec-4] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+23:11:33:055 [http-nio-8080-exec-5] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+23:11:33:071 [http-nio-8080-exec-5] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+23:14:51:923 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+23:14:51:937 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+23:17:46:762 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Invoke ItemIdGenerate()
+23:17:46:774 [http-nio-8080-exec-10] INFO  o.e.webposbackend.controller.Item - Item saved successfully
+12:39:49:809 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Invoke idGenerate()
+12:39:49:824 [http-nio-8080-exec-1] INFO  o.e.w.controller.Customer - Customer saved successfully

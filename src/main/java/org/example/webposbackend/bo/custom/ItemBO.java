@@ -1,4 +1,4 @@
-package org.example.webposbackend.bo;
+package org.example.webposbackend.bo.custom;
 
 import org.example.webposbackend.dto.CustomerDTO;
 import org.example.webposbackend.dto.ItemDTO;
