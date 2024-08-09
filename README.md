@@ -62,9 +62,7 @@ The back-end, developed using Jakarta EE, manages server-side operations, data p
 ## API Documentation
 Explore the API documentation to understand how to interact with the system's backend:
 
-- [Customer API Documentation](https://link-to-customer-api-docs)
-- [Item API Documentation](https://link-to-item-api-docs)
-- [Order API Documentation](https://link-to-order-api-docs)
+- [API Documentation](https://documenter.getpostman.com/view/35385497/2sA3s3GWVK)
 
 ## Best Practices
 
